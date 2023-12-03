@@ -1,16 +1,16 @@
 ---
 ## 事前に設定する部分
-webhook_url: https://discord.com/api/webhooks/1155468717807915128/U19yMbPy3zv4k5gpBsg3Lvezswz47bG2jrxUDhIXKheMH0lfonsPWt3rOJ9FdLK_Koda
+webhook_url: https://discord.com/api/webhooks/1180684002873577482/PqDZWqSpSRjp2oywqqaFiuN9WRtPPHRHzho6dr_wQW8LGPe1QTujilFZfAtHNbL9WnaH
 
 github:
-  repo_url: git@github.com:ikura-hamu/isucon-ansible-test.git
-  repo_name: isucon-ansible-test
+  repo_url: git@github.com:tyama11/isucon12.git
+  repo_name: isucon12
 
 deploy_branch: main
 
 ## 当日サーバーに入って設定する部分
 
-project_root: /home/isucon/private_isu
+project_root: /home/isucon/
 
 nginx:
   conf_dir:
@@ -27,7 +27,7 @@ db:
   service_name: mysql
 
 app:
-  service_name: isu-go
+  service_name: isuports-go
   dir: "{{ project_root }}/webapp/golang"
   bin: "{{ project_root }}/webapp/golang/app"
 
